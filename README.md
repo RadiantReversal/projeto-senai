@@ -53,16 +53,16 @@ __ETEPA 6: Produto final: O algoritmo concluído e testado está pronto para ser
 
 __ETAPAS POSTERIORES - Recomenda-se seguir.__
 
-   - 1. Manutenção e Atualização:
+   >  1. Manutenção e Atualização:
 -	Monitorar o desempenho do software em produção.
 -	Corrigir erros e realizar atualizações conforme necessário.
 -	Adicionar novos recursos ou melhorar o software com base no feedback do usuário.
   
-   - 2. Documentação:
+   >  2. Documentação:
 -	Criar documentação para usuários finais e desenvolvedores.
 -	Detalhar instruções de instalação e uso do software.
   
-   - 3. Colaboração e Comunicação:
+   >  3. Colaboração e Comunicação:
 -	Manter uma comunicação constante com a equipe.
 -	Colaborar com outros desenvolvedores e profissionais da equipe.
 
