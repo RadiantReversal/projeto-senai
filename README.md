@@ -7,8 +7,7 @@
 -	Luiz Antônio Costa
 
 # 2. Objetivo del proyecto:
-Diante da crescente necessidade de diversas instituições educacionais no Brasil, que demandam uma solução eficaz para o registro e identificação de seus inscritos, recursos e entidades associadas, nosso grupo de desenvolvimento de software mergulhou de cabeça nesse desafio. 
-Percorremos todas as etapas de desenvolvimento com o objetivo claro de proporcionar a essas comunidades um sistema de registro inovador e eficiente.
+Diante da crescente necessidade de diversas instituições educacionais no Brasil, que demandam uma solução eficaz para o registro e identificação de seus inscritos, recursos e entidades associadas, nosso grupo de desenvolvimento de software mergulhou de cabeça nesse desafio. Percorremos todas as etapas de desenvolvimento com o objetivo claro de proporcionar a essas comunidades um sistema de registro inovador e eficiente.
 
 # 3. Etapas de desenvolvimento de software que utilizamos:
 Diante de uma necessidade que identificamos na sociedade, decidimos iniciar este projeto.
@@ -54,15 +53,16 @@ ETEPA 6: Produto final: O algoritmo concluído e testado está pronto para ser a
 
 ETAPAS POSTERIORES - Recomenda-se seguir.
 
-        -1. Manutenção e Atualização:
+   - Manutenção e Atualização:
 -	Monitorar o desempenho do software em produção.
 -	Corrigir erros e realizar atualizações conforme necessário.
 -	Adicionar novos recursos ou melhorar o software com base no feedback do usuário.
-        - 2.	Documentação:
+  
+   - Documentação:
 -	Criar documentação para usuários finais e desenvolvedores.
 -	Detalhar instruções de instalação e uso do software.
   
-       - 3.	Colaboração e Comunicação:
+   - Colaboração e Comunicação:
 -	Manter uma comunicação constante com a equipe.
 -	Colaborar com outros desenvolvedores e profissionais da equipe.
 
