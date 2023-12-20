@@ -1,0 +1,43 @@
+-- Inserindo dados fictícios na tabela Aluno
+INSERT INTO Aluno (nome, endereço, email, telefone, data_nascimento, genero, escola_id)
+VALUES
+    ('João Silva', 'Rua A, 123', 'joao@email.com', '111-1111', '1995-05-15', 'Masculino', 25),
+    ('Maria Oliveira', 'Avenida B, 456', 'maria@email.com', '222-2222', '1998-10-20', 'Feminino', 6),
+    ('Carlos Santos', 'Rua C, 789', 'carlos@email.com', '333-3333', '1997-03-08', 'Masculino', 93);
+
+
+[
+  {
+    "nome": "João Silva",
+    "endereço": "Rua A, 123",
+    "email": "joao@email.com",
+    "telefone": "111-1111",
+    "dataNascimento": "1995-05-15",
+    "genero": "Masculino",
+    "escola": {
+        "id": 93
+    }
+  },
+  {
+    "nome": "Maria Oliveira",
+    "endereço": "Avenida B, 456",
+    "email": "maria@email.com",
+    "telefone": "222-2222",
+    "dataNascimento": "1998-10-20",
+    "genero": "Feminino",
+    "escola": {
+        "id": 6
+    }
+  },
+  {
+    "nome": "Carlos Santos",
+    "endereço": "Rua C, 789",
+    "email": "carlos@email.com",
+    "telefone": "333-3333",
+    "dataNascimento": "1997-03-08",
+    "genero": "Masculino",
+    "escola": {
+        "id": 25
+    }
+  }
+]
