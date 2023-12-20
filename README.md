@@ -1,65 +1,64 @@
-# Projeto integrador final: BackEnd- Senai
+## Projeto integrador final: BackEnd- Senai
 
-1. Membros da equipe:
+#1. Membros da equipe:
 -	Daniel Mendes Domingos
 -	Rodrigo Henrique Fernandes
 -	Carol Miranda Guzman
 -	Luiz Antônio Costa
 
-2. Objetivo del proyecto:
+#2. Objetivo del proyecto:
 
-3. Etapas de desenvolvimento de software que utilizamos:
+#3. Etapas de desenvolvimento de software que utilizamos:
 Diante de uma necessidade que identificamos na sociedade, decidimos iniciar este projeto.
 Necessidade: Registro de alunos e escolas de uma instituição educacional.
 
 ETAPA 1. Ideação e Planejamento de software:
-•	Definimos o propósito do software e os problemas que ele resolverá.
-•	Estabelecemos objetivos e requisitos do projeto.
-•	Realizamos uma análise de viabilidade e planejamento.
+-	Definimos o propósito do software e os problemas que ele resolverá.
+-	Estabelecemos objetivos e requisitos do projeto.
+-	Realizamos uma análise de viabilidade e planejamento.
 
 ETAPA 2. Desenvolvimento de um algoritmo para resolver o problema.
-•	Criamo uma arquitetura de software.
-•	Projetamos a interface do usuário (UI) e a experiência do usuário (UX).
-•	Definimos a estrutura do banco de dados (Design do banco de dados)
+-	Criamo uma arquitetura de software.
+-	Projetamos a interface do usuário (UI) e a experiência do usuário (UX).
+-	Definimos a estrutura do banco de dados (Design do banco de dados)
 
 ETAPA 3 Implementação (Codificação):    
-•	Escrevemos e organizamos o código do software em Eclipse com JAVA.
-•	Procuramos seguir as melhores práticas de programação.
-•	Utilizamos testes unitários para verificar a funcionalidade do código.
-•	Para a documentação das Rotas e requisições HTTP utilizamos Swagger.
-•	Para o sistema em Spring boot, utilizamos linguagem JAVA com orientação a Objetos seguindo o modelo de camadas MVC.
-•	Tecnologias que utilizamos: 
-1.	Spring Data JPA – Hibernate – ORM 
-2.	Spring Security 
-3.	Spring Boot 
-4.	Upload de arquivos 
-5.	Mysql 
-6.	H2 Database – Banco de teste 
-7.	Swagger
+-	Escrevemos e organizamos o código do software em Eclipse com JAVA.
+-	Procuramos seguir as melhores práticas de programação.
+-	Utilizamos testes unitários para verificar a funcionalidade do código.
+-	Para a documentação das Rotas e requisições HTTP utilizamos Swagger.
+-	Para o sistema em Spring boot, utilizamos linguagem JAVA com orientação a Objetos seguindo o modelo de camadas MVC.
+-	Tecnologias que utilizamos: 
+- 1.	Spring Data JPA – Hibernate – ORM 
+- 2.	Spring Security 
+- 3.	Spring Boot 
+- 4.	Upload de arquivos 
+- 5.	Mysql 
+- 6.	H2 Database – Banco de teste 
+- 7.	Swagger
    
 ETAPA 4 Teste de qualidade:
-•	Realizamos testes de unidade, integração e sistema para identificar erros e garantir qualidade do nosso software.
-•	Realizamos testes de desempenho e segurança, conforme foi necessário.
+-	Realizamos testes de unidade, integração e sistema para identificar erros e garantir qualidade do nosso software.
+-	Realizamos testes de desempenho e segurança, conforme foi necessário.
 
 ETAPA 5: Alteração: 
-•	 Tivemos que alterar o algoritmo um pouco para que funcione satisfatoriamente.
+-	 Tivemos que alterar o algoritmo um pouco para que funcione satisfatoriamente.
 
-ETEPA 6: Produto final: 
-O algoritmo concluído e testado está pronto para ser aplicado. 
-•	Preparar o software para o lançamento.
-•	Implementar o software em um ambiente de produção.
+ETEPA 6: Produto final: O algoritmo concluído e testado está pronto para ser aplicado. 
+-	Preparar o software para o lançamento.
+-	Implementar o software em um ambiente de produção.
 
 ETAPAS POSTERIORES (Recomenda-se seguir)
-1.	Manutenção e Atualização:
-•	Monitorar o desempenho do software em produção.
-•	Corrigir erros e realizar atualizações conforme necessário.
-•	Adicionar novos recursos ou melhorar o software com base no feedback do usuário.
-2.	Documentação:
-•	Criar documentação para usuários finais e desenvolvedores.
-•	Detalhar instruções de instalação e uso do software.
-3.	Colaboração e Comunicação:
-•	Manter uma comunicação constante com a equipe.
-•	Colaborar com outros desenvolvedores e profissionais da equipe.
+- 1.	Manutenção e Atualização:
+-	Monitorar o desempenho do software em produção.
+-	Corrigir erros e realizar atualizações conforme necessário.
+-	Adicionar novos recursos ou melhorar o software com base no feedback do usuário.
+- 2.	Documentação:
+-	Criar documentação para usuários finais e desenvolvedores.
+-	Detalhar instruções de instalação e uso do software.
+- 3.	Colaboração e Comunicação:
+-	Manter uma comunicação constante com a equipe.
+-	Colaborar com outros desenvolvedores e profissionais da equipe.
 
 Repositorio: https://github.com/RadiantReversal/projeto-senai/tree/main
 
