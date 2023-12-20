@@ -1,14 +1,14 @@
 # Projeto integrador final: BackEnd- Senai
 
-## 1. Membros da equipe:
+# 1. Membros da equipe:
 -	Daniel Mendes Domingos
 -	Rodrigo Henrique Fernandes
 -	Carol Miranda Guzman
 -	Luiz Antônio Costa
 
-## 2. Objetivo del proyecto:
+# 2. Objetivo del proyecto:
 
-## 3. Etapas de desenvolvimento de software que utilizamos:
+# 3. Etapas de desenvolvimento de software que utilizamos:
 Diante de uma necessidade que identificamos na sociedade, decidimos iniciar este projeto.
 Necessidade: Registro de alunos e escolas de uma instituição educacional.
 
@@ -29,13 +29,14 @@ ETAPA 3 Implementação (Codificação):
 -	Para a documentação das Rotas e requisições HTTP utilizamos Swagger.
 -	Para o sistema em Spring boot, utilizamos linguagem JAVA com orientação a Objetos seguindo o modelo de camadas MVC.
 
--	Tecnologias que utilizamos: 
+-	Tecnologias que utilizamos:
+  
   1.	Spring Data JPA – Hibernate – ORM 
   2.	Spring Security 
   3.	Spring Boot 
   4.	Upload de arquivos 
   5.	Mysql 
-  6.	H2 Database – Banco de teste 
+  6.	H2 Database – Banco de teste
   7.	Swagger
    
 ETAPA 4 Teste de qualidade:
@@ -50,7 +51,8 @@ ETEPA 6: Produto final: O algoritmo concluído e testado está pronto para ser a
 -	Implementar o software em um ambiente de produção.
 
 ETAPAS POSTERIORES (Recomenda-se seguir)
-       - 1.	Manutenção e Atualização:
+
+  - 1.	Manutenção e Atualização:
 -	Monitorar o desempenho do software em produção.
 -	Corrigir erros e realizar atualizações conforme necessário.
 -	Adicionar novos recursos ou melhorar o software com base no feedback do usuário.
@@ -62,6 +64,8 @@ ETAPAS POSTERIORES (Recomenda-se seguir)
        - 3.	Colaboração e Comunicação:
 -	Manter uma comunicação constante com a equipe.
 -	Colaborar com outros desenvolvedores e profissionais da equipe.
+
+
 
 Repositorio: https://github.com/RadiantReversal/projeto-senai/tree/main
 
