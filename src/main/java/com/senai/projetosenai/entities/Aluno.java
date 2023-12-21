@@ -11,12 +11,10 @@ import java.util.Date;
 public class Aluno {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @JoinColumn(name="escola_id", nullable = false)
+    @JoinColumn(name = "escola_id", nullable = false)
     private Integer id;
     @Column(nullable = false)
     private String nome;
-
-    //novas alterações
 
     @Column(nullable = false)
     private String endereço;
@@ -36,7 +34,8 @@ public class Aluno {
     @ManyToOne
     private Escola escola;
 
-    public Aluno () {}
+    public Aluno() {
+    }
 
     public Aluno(Integer id, String nome, String endereço, String email, String telefone, Date dataNascimento, String genero, Escola escola) {
         this.id = id;

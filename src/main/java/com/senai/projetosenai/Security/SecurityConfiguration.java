@@ -24,9 +24,9 @@ public class SecurityConfiguration {
     @Bean
     public UserDetailsService userDetailsService(PasswordEncoder enconder) {
         UserDetails admin = User
-            .withUsername("admin")
-            .password(enconder.encode("1"))
-            .build();
+                .withUsername("admin")
+                .password(enconder.encode("1"))
+                .build();
 
         return new InMemoryUserDetailsManager(admin);
     }
@@ -37,23 +37,26 @@ public class SecurityConfiguration {
     }
 
     @Bean
-	public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
-		http
-			.authorizeHttpRequests((authorize) -> authorize
-                .anyRequest().authenticated())
-			    .httpBasic(Customizer.withDefaults())
-			    .formLogin(Customizer.withDefaults())
+    public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
+        http
+                .authorizeHttpRequests((authorize) -> authorize
+                        .anyRequest().authenticated())
+                .httpBasic(Customizer.withDefaults())
+                .formLogin()
+                .defaultSuccessUrl("/homepage.html", true)
+                .permitAll()
+                .and()
                 .csrf(csrf -> csrf.disable())
                 .headers().frameOptions().disable();
 
-		return http.build();
+        return http.build();
     }
 
     @Bean
     CorsConfigurationSource corsConfigurationSource() {
         CorsConfiguration configuration = new CorsConfiguration();
         configuration.setAllowedOrigins(List.of("*"));
-        configuration.setAllowedMethods(Arrays.asList("GET","POST", "PUT", "DELETE"));
+        configuration.setAllowedMethods(Arrays.asList("GET", "POST", "PUT", "DELETE"));
         UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
         source.registerCorsConfiguration("/**", configuration);
         return source;

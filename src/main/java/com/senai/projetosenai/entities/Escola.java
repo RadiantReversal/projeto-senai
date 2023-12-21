@@ -15,8 +15,6 @@ public class Escola {
     private Integer id;
     @Column(nullable = false)
     private String nome;
-    // novas alterações
-
     @Column(nullable = false)
     private String endereço;
 
@@ -34,7 +32,8 @@ public class Escola {
     @OneToMany(mappedBy = "escola")
     private Set<Aluno> alunos;
 
-    public Escola () {}
+    public Escola() {
+    }
 
     public Escola(Integer id, String nome, String endereço, String telefone, String email, String diretor, Set<Aluno> alunos) {
         this.id = id;

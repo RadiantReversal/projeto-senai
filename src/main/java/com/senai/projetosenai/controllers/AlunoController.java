@@ -1,6 +1,7 @@
 package com.senai.projetosenai.controllers;
 
 import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
@@ -21,7 +22,7 @@ public class AlunoController {
     @GetMapping
     public ResponseEntity<List<Aluno>> getAll() {
         List<Aluno> lista = service.getAll();
-        return ResponseEntity.status(HttpStatus.OK) .body(lista);
+        return ResponseEntity.status(HttpStatus.OK).body(lista);
     }
 
     @GetMapping(value = "/{id}")
@@ -31,9 +32,9 @@ public class AlunoController {
     }
 
     @PostMapping
-    public ResponseEntity<String> saveAluno(@RequestBody  Aluno aluno) {
-    service.saveAluno(aluno);
-    return ResponseEntity.status(HttpStatus.CREATED).body("Aluno cadastrado com sucesso!");
+    public ResponseEntity<String> saveAluno(@RequestBody Aluno aluno) {
+        service.saveAluno(aluno);
+        return ResponseEntity.status(HttpStatus.CREATED).body("Aluno cadastrado com sucesso!");
     }
 
     @PutMapping(value = "/{id}")

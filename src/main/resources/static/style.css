@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;700&display=swap');
+
+body {
+    background-color: #a2d2ff;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    width: 500px;
+    height: 670px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 3px;
+    border-radius: 1%;
+    box-shadow: 0px 1px 4px hsl(0deg 0% 26.46% / 48%);
+}
+
+@media (max-width: 425px) {
+    .card {
+        width: 330px;
+        gap: unset;
+    }
+}
