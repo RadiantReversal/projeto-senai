@@ -1,4 +1,4 @@
-# Projeto integrador Final: Programador Back-end / SENAI
+# Projeto Integrador Final: Programador Back-end / SENAI
 
 # 1. Membros da equipe:
 
