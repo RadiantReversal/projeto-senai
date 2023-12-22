@@ -1,9 +1,12 @@
 -- Inserindo dados fictícios na tabela Aluno
+
+use escoladb;
+
 INSERT INTO Aluno (nome, endereço, email, telefone, data_nascimento, genero, escola_id)
 VALUES
-    ('João Silva', 'Rua A, 123', 'joao@email.com', '111-1111', '1995-05-15', 'Masculino', 25),
-    ('Maria Oliveira', 'Avenida B, 456', 'maria@email.com', '222-2222', '1998-10-20', 'Feminino', 6),
-    ('Carlos Santos', 'Rua C, 789', 'carlos@email.com', '333-3333', '1997-03-08', 'Masculino', 93);
+    ('João Silva', 'Rua A, 123', 'joao@email.com', '111-1111', '1995-05-15', 'Masculino', 1),
+    ('Maria Oliveira', 'Avenida B, 456', 'maria@email.com', '222-2222', '1998-10-20', 'Feminino', 2),
+    ('Carlos Santos', 'Rua C, 789', 'carlos@email.com', '333-3333', '1997-03-08', 'Masculino', 3);
 
 
 [

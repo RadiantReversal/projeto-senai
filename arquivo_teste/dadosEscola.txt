@@ -26,6 +26,8 @@
 ]
 
 
+use escoladb;
+
 INSERT INTO Escola (id, nome, endereço, telefone, email, diretor)
 VALUES
     (1, 'Escola A', 'Endereço A', '111-1111', 'escolaA@email.com', 'Diretor A'),
