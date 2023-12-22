@@ -3,7 +3,7 @@
 # 1. Membros da equipe:
 
 - Daniel Mendes Domingos
-- Rodrigo Henrique Fernandes
+- RODRIGO HENRIQUE FERNANDES
 - Carol Miranda Guzman
 - Luiz Antônio Costa
 
