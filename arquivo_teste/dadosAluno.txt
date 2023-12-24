@@ -2,7 +2,7 @@
 
 use escoladb;
 
-INSERT INTO Aluno (nome, endereço, email, telefone, data_nascimento, genero, escola_id)
+INSERT INTO Aluno (nome, endereco, email, telefone, data_nascimento, genero, escola_id)
 VALUES
     ('João Silva', 'Rua A, 123', 'joao@email.com', '111-1111', '1995-05-15', 'Masculino', 1),
     ('Maria Oliveira', 'Avenida B, 456', 'maria@email.com', '222-2222', '1998-10-20', 'Feminino', 2),
@@ -12,7 +12,7 @@ VALUES
 [
   {
     "nome": "João Silva",
-    "endereço": "Rua A, 123",
+    "endereco": "Rua A, 123",
     "email": "joao@email.com",
     "telefone": "111-1111",
     "dataNascimento": "1995-05-15",
@@ -23,7 +23,7 @@ VALUES
   },
   {
     "nome": "Maria Oliveira",
-    "endereço": "Avenida B, 456",
+    "endereco": "Avenida B, 456",
     "email": "maria@email.com",
     "telefone": "222-2222",
     "dataNascimento": "1998-10-20",
@@ -34,7 +34,7 @@ VALUES
   },
   {
     "nome": "Carlos Santos",
-    "endereço": "Rua C, 789",
+    "endereco": "Rua C, 789",
     "email": "carlos@email.com",
     "telefone": "333-3333",
     "dataNascimento": "1997-03-08",

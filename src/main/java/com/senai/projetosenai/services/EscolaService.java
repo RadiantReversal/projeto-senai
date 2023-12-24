@@ -1,10 +1,8 @@
 package com.senai.projetosenai.services;
 
 import java.util.List;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
 import com.senai.projetosenai.entities.Escola;
 import com.senai.projetosenai.exceptions.NaoEncontrado;
 import com.senai.projetosenai.repositories.EscolaRepository;
@@ -31,6 +29,10 @@ public class EscolaService {
         Escola response = repository.findById(id).get();
 
         response.setNome(escola.getNome());
+        response.setTelefone(escola.getTelefone());
+        response.setDiretor(escola.getDiretor());
+        response.setEndereco(escola.getEndereco());
+        response.setEmail(escola.getEmail());
         repository.save(response);
         return "Escola editada com sucesso!";
     }

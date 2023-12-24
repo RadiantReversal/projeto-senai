@@ -1,27 +1,30 @@
 package com.senai.projetosenai.entities;
 
 import java.util.Set;
-
 import com.fasterxml.jackson.annotation.JsonManagedReference;
-
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.OneToMany;
+import jakarta.validation.constraints.Email;
 
 @Entity
 public class Escola {
+
     @Id
     private Integer id;
+
     @Column(nullable = false)
     private String nome;
+
     @Column(nullable = false)
-    private String endereço;
+    private String endereco;
 
     @Column(nullable = false)
     private String telefone;
 
     @Column(nullable = false)
+    @Email
     private String email;
 
     @Column(nullable = false)
@@ -35,11 +38,11 @@ public class Escola {
     public Escola() {
     }
 
-    public Escola(Integer id, String nome, String endereço, String telefone, String email, String diretor, Set<Aluno> alunos) {
+    public Escola(Integer id, String nome, String endereco, String telefone, String email, String diretor, Set<Aluno> alunos) {
         this.id = id;
         this.nome = nome;
         this.alunos = alunos;
-        this.endereço = endereço;
+        this.endereco = endereco;
         this.telefone = telefone;
         this.email = email;
         this.diretor = diretor;
@@ -69,12 +72,12 @@ public class Escola {
         this.alunos = alunos;
     }
 
-    public String getEndereço() {
-        return endereço;
+    public String getEndereco() {
+        return endereco;
     }
 
-    public void setEndereço(String endereço) {
-        this.endereço = endereço;
+    public void setEndereco(String endereco) {
+        this.endereco = endereco;
     }
 
     public String getTelefone() {

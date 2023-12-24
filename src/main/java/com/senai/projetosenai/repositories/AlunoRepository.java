@@ -7,5 +7,4 @@ import com.senai.projetosenai.entities.Aluno;
 
 @Repository
 public interface AlunoRepository extends JpaRepository<Aluno, Integer> {
-
 }

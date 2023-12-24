@@ -1,23 +1,27 @@
 package com.senai.projetosenai.entities;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
-
 import jakarta.persistence.*;
+import jakarta.validation.constraints.Email;
 import org.springframework.format.annotation.DateTimeFormat;
-
-import java.util.Date;
+import java.time.LocalDate;
 
 @Entity
 public class Aluno {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @JoinColumn(name = "escola_id", nullable = false)
     private Integer id;
+
     @Column(nullable = false)
     private String nome;
 
     @Column(nullable = false)
-    private String endereço;
+    private String endereco;
+
+    @Column
+    @Email
     private String email;
 
     @Column(nullable = false)
@@ -25,7 +29,7 @@ public class Aluno {
 
     @DateTimeFormat(pattern = "yyyy-MM-dd")
     @Column(name = "data_nascimento")
-    private Date dataNascimento;
+    private LocalDate dataNascimento;
 
     private String genero;
 
@@ -37,11 +41,11 @@ public class Aluno {
     public Aluno() {
     }
 
-    public Aluno(Integer id, String nome, String endereço, String email, String telefone, Date dataNascimento, String genero, Escola escola) {
+    public Aluno(Integer id, String nome, String endereco, String email, String telefone, LocalDate dataNascimento, String genero, Escola escola) {
         this.id = id;
         this.nome = nome;
         this.escola = escola;
-        this.endereço = endereço;
+        this.endereco = endereco;
         this.email = email;
         this.telefone = telefone;
         this.dataNascimento = dataNascimento;
@@ -72,12 +76,12 @@ public class Aluno {
         this.escola = escola;
     }
 
-    public String getEndereço() {
-        return endereço;
+    public String getEndereco() {
+        return endereco;
     }
 
-    public void setEndereço(String endereço) {
-        this.endereço = endereço;
+    public void setEndereco(String endereco) {
+        this.endereco = endereco;
     }
 
     public String getEmail() {
@@ -96,11 +100,11 @@ public class Aluno {
         this.telefone = telefone;
     }
 
-    public Date getDataNascimento() {
+    public LocalDate getDataNascimento() {
         return dataNascimento;
     }
 
-    public void setDataNascimento(Date dataNascimento) {
+    public void setDataNascimento(LocalDate dataNascimento) {
         this.dataNascimento = dataNascimento;
     }
 

@@ -7,5 +7,4 @@ import com.senai.projetosenai.entities.Escola;
 
 @Repository
 public interface EscolaRepository extends JpaRepository<Escola, Integer> {
-
 }

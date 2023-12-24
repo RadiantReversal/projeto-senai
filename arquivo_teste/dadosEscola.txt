@@ -2,7 +2,7 @@
   {
     "id": 25,
     "nome": "Escola A",
-    "endereço": "Endereço A",
+    "endereco": "Endereço A",
     "telefone": "111-1111",
     "email": "escolaA@email.com",
     "diretor": "Diretor A"
@@ -10,7 +10,7 @@
   {
     "id": 6,
     "nome": "Escola B",
-    "endereço": "Endereço B",
+    "endereco": "Endereço B",
     "telefone": "222-2222",
     "email": "escolaB@email.com",
     "diretor": "Diretor B"
@@ -18,7 +18,7 @@
   {
     "id": 93,
     "nome": "Escola C",
-    "endereço": "Endereço C",
+    "endereco": "Endereço C",
     "telefone": "333-3333",
     "email": "escolaC@email.com",
     "diretor": "Diretor C"
@@ -28,7 +28,7 @@
 
 use escoladb;
 
-INSERT INTO Escola (id, nome, endereço, telefone, email, diretor)
+INSERT INTO Escola (id, nome, endereco, telefone, email, diretor)
 VALUES
     (1, 'Escola A', 'Endereço A', '111-1111', 'escolaA@email.com', 'Diretor A'),
     (2, 'Escola B', 'Endereço B', '222-2222', 'escolaB@email.com', 'Diretor B'),

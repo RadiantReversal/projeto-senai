@@ -1,24 +1,17 @@
 package com.senai.projetosenai.controllers;
 
 import java.util.List;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.DeleteMapping;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.PutMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import com.senai.projetosenai.entities.Escola;
 import com.senai.projetosenai.services.EscolaService;
 
 @RestController
 @RequestMapping("/escola")
 public class EscolaController {
+
     @Autowired
     private EscolaService service;
 
@@ -41,15 +34,15 @@ public class EscolaController {
     }
 
     @PutMapping(value = "/{id}")
-    public String editarAluno(@PathVariable Integer id, @RequestBody Escola escola) {
-        String response = service.editarEscola(id, escola);
-        return response;
+    public ResponseEntity<String> editarEscola(@PathVariable Integer id, @RequestBody Escola escola) {
+    String response = service.editarEscola(id, escola);
+    return ResponseEntity.status(HttpStatus.OK).body(response);
     }
 
     @DeleteMapping(value = "/{id}")
-    public String excluirAluno(@PathVariable Integer id) {
-        service.excluirEscola(id);
-        return "Escola excluída com sucesso!";
+    public ResponseEntity<String> excluirEscola(@PathVariable Integer id) {
+    service.excluirEscola(id);
+    return ResponseEntity.ok("Escola excluída com sucesso.");
     }
-}
 
+}

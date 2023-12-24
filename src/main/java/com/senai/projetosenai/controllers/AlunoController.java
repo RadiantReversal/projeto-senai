@@ -1,21 +1,18 @@
 package com.senai.projetosenai.controllers;
 
 import java.util.List;
-
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
-import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-
 import com.senai.projetosenai.entities.Aluno;
 import com.senai.projetosenai.services.AlunoService;
-import org.springframework.web.multipart.MultipartFile;
+
 
 @RestController
 @RequestMapping("/aluno")
 public class AlunoController {
+
     @Autowired
     private AlunoService service;
 
@@ -38,14 +35,14 @@ public class AlunoController {
     }
 
     @PutMapping(value = "/{id}")
-    public String editarAluno(@PathVariable Integer id, @RequestBody Aluno aluno) {
-        String response = service.editarAluno(id, aluno);
-        return response;
+    public ResponseEntity<String> editarEscola(@PathVariable Integer id, @RequestBody Aluno aluno) {
+    String response = service.editarAluno(id, aluno);
+    return ResponseEntity.status(HttpStatus.OK).body(response);
     }
 
     @DeleteMapping(value = "/{id}")
-    public String excluirAluno(@PathVariable Integer id) {
-        service.excluirAluno(id);
-        return "Aluno excluído com sucesso!";
+    public ResponseEntity<String> excluirEscola(@PathVariable Integer id) {
+    service.excluirAluno(id);
+    return ResponseEntity.ok("Aluno excluído com sucesso.");
     }
 }

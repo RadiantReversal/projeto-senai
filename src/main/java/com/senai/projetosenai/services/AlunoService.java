@@ -1,20 +1,12 @@
 package com.senai.projetosenai.services;
 
-import java.io.IOException;
+
 import java.util.List;
-
-import org.apache.tomcat.util.codec.binary.Base64;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpHeaders;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.MediaType;
-import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
-
 import com.senai.projetosenai.entities.Aluno;
 import com.senai.projetosenai.exceptions.NaoEncontrado;
 import com.senai.projetosenai.repositories.AlunoRepository;
-import org.springframework.web.multipart.MultipartFile;
 
 @Service
 public class AlunoService {
@@ -38,6 +30,11 @@ public class AlunoService {
         Aluno response = repository.findById(id).get();
 
         response.setNome(aluno.getNome());
+        response.setTelefone(aluno.getTelefone());
+        response.setEndereco(aluno.getEndereco());
+        response.setEmail(aluno.getEmail());
+        response.setGenero(aluno.getGenero());
+        response.setDataNascimento(aluno.getDataNascimento());
         repository.save(response);
         return "Aluno editado com sucesso!";
     }
