@@ -3,7 +3,6 @@ package com.senai.projetosenai.storage;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 import org.springframework.web.multipart.MultipartFile;
-
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -15,11 +14,11 @@ public class Disco {
     @Value("${contato.disco.raiz}")
     private String raiz;
 
-    @Value("${contato.disco.diretorio-fotos}")
-    private String diretorioFotos;
+    @Value("${contato.disco.diretorio-arquivos}")
+    private String diretorioArquivos;
 
-    public void salvarFoto(MultipartFile foto) {
-        this.salvar(this.diretorioFotos, foto);
+    public void salvarFoto(MultipartFile arquivo) {
+        this.salvar(this.diretorioArquivos, arquivo);
     }
 
     public void salvar(String diretorio, MultipartFile arquivo) {
@@ -27,7 +26,7 @@ public class Disco {
         Path arquivoPath = diretorioPath.resolve(arquivo.getOriginalFilename());
 
         try {
-            Files.createDirectories(diretorioPath); // Certifique-se de criar diretórios se não existirem
+            Files.createDirectories(diretorioPath);
             arquivo.transferTo(arquivoPath.toFile());
         } catch (IOException e) {
             throw new RuntimeException("Problemas na tentativa de salvar arquivos!", e);

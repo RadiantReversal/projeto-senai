@@ -23,8 +23,8 @@ public class EscolaController {
 
     @GetMapping(value = "/{id}")
     public Escola buscarId(@PathVariable Integer id) {
-        Escola response = service.buscarId(id);
-        return response;
+        Escola escola = service.buscarId(id);
+        return escola;
     }
 
     @PostMapping

@@ -6,14 +6,14 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
 @RestController
-@RequestMapping("/fotos")
-public class FotosResource {
+@RequestMapping("/arquivo")
+public class ArquivosResource {
 
     @Autowired
     private Disco disco;
 
     @PostMapping
-    public void upload(@RequestParam MultipartFile foto) {
-        disco.salvarFoto(foto);
+    public void upload(@RequestParam MultipartFile arquivo) {
+        disco.salvarFoto(arquivo);
     }
 }
