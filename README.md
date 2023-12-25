@@ -91,4 +91,7 @@ Repositorio: https://github.com/RadiantReversal/projeto-senai
 Slides de Apresentação do Projeto:
 https://docs.google.com/presentation/d/1y9iF-zx_6qTWx7U-tcOxUqVjj0HZUo8i/edit?usp=drive_link&ouid=105516555323049452095&rtpof=true&sd=true
 
-Este projeto é licenciado sob MIT License.
+Este projeto é licenciado sob MIT License.<br>
+
+![giphy](https://github.com/RadiantReversal/projeto-senai/assets/151454139/7e4c4446-3963-4a8e-9601-291f8081c7b4)
+
